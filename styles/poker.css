@@ -4,11 +4,34 @@ body {
   font-size: 12pt;
   color: #00004d;
 }
+ln{
+  padding: 0px;
+  display: block;
+}
+.important {
+  font-size: 25pt;
+  font-weight: bold;
+}
+#pokerTimer {
+  margin-top:0px;
+}
 #pokerHeader {
-  background-color:#e6e6ff;
+  background-color: #e6e6ff;
   width: 80%;
+  height: 100px;
   margin: auto;
   padding: 10px;
+}
+#sessionDetails {
+  background-color:#9999ff;
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+#pokerTimerWrapper {
+  background-color:#b3b3ff;
+  margin-left: 15%;
+  height: 100px;
 }
 #pokerBody {
   background-color:#ccccff;

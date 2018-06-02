@@ -2,11 +2,27 @@
 <head>
 <link rel="stylesheet" href="styles/poker.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<<<<<<< HEAD
 <script type="text/javascript" src="C:\Users\user\Documents\GitHub\cambridge_4m_060218\scripts\pokerCards.js" ></script>
+=======
+<script src="scripts/pokerTimer.js"></script>
+>>>>>>> 8beaa8e80bfbc4bcc49c6d846361d8b459a38189
 </head>
 	<body ng-app="pokerPlanner" ng-controller="myCtrl">
 		<div id="pokerHeader">
-			This is the pokerHeader
+			<div id="sessionDetails">
+				<ln>Poker Planning Session</ln>
+				<ln class="important">ABC123</ln>
+			</div>
+			<div id="pokerTimerWrapper">
+				<div id="pokerTimerView">
+					<ln id="pokerTimer" class="important">Timer stopped.</ln>
+				</div>
+				<div id="pokerTimerCtrl">
+					<button type="button" id="timerStart" onclick="timerStart(1,0)">Start</button>
+					<button type="button" id="timerStop" onclick="timerStop()">Stop</button>
+				</div>
+			</div>
 		</div>
 		<div id="pokerBody">
 			<div id="selectedCard" >
