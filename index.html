@@ -2,10 +2,23 @@
 <head>
 <link rel="stylesheet" href="styles/poker.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="scripts/pokerTimer.js"></script>
 </head>
 	<body>
 		<div id="pokerHeader">
-			This is the pokerHeader
+			<div id="sessionDetails">
+				<ln>Poker Planning Session</ln>
+				<ln class="important">ABC123</ln>
+			</div>
+			<div id="pokerTimerWrapper">
+				<div id="pokerTimerView">
+					<ln id="pokerTimer" class="important">Timer stopped.</ln>
+				</div>
+				<div id="pokerTimerCtrl">
+					<button type="button" id="timerStart" onclick="timerStart(1,0)">Start</button>
+					<button type="button" id="timerStop" onclick="timerStop()">Stop</button>
+				</div>
+			</div>
 		</div>
 		<div id="pokerBody">
 			<div id="selectedCard">
