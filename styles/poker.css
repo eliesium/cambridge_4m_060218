@@ -1,0 +1,30 @@
+
+body {
+  font-family: arial;
+  font-size: 12pt;
+  color: #00004d;
+}
+#pokerHeader {
+  background-color:#e6e6ff;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+#pokerBody {
+  background-color:#ccccff;
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+}
+#selectedCard {
+  background-color:#b3b3ff;
+  width: 25%;
+  height: 200px;
+  float: left;
+}
+#pokerCards {
+  background-color:#9999ff;
+  margin-left: 15%;
+  height: 200px;
+}
