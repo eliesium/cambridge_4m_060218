@@ -2,17 +2,30 @@
 <head>
 <link rel="stylesheet" href="styles/poker.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="C:\Users\user\Documents\GitHub\cambridge_4m_060218\scripts\pokerCards.js" ></script>
 </head>
-	<body>
+	<body ng-app="pokerPlanner" ng-controller="myCtrl">
 		<div id="pokerHeader">
 			This is the pokerHeader
 		</div>
 		<div id="pokerBody">
-			<div id="selectedCard">
+			<div id="selectedCard" >
 				This is the selectedCard
+				<!--<p>Name: <input type="text" ng-model="name"></p>-->
+				<p>Your Card is: {{ pokerCard }}</p>
 			</div>
-			<div id="pokerCards">
+			
+			<div id="pokerCards" >
 				This is the pokerCards
+				<table>
+					<tr>
+						<td>
+							<script>
+								CreatePokerCards();
+							</script>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</body>
