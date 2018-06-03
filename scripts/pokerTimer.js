@@ -2,7 +2,7 @@ var countDownDate;
 var timerConfig = 1;
 
 function timerStart() {
-  countDownDate = new Date().getTime()+(1+(timerConfig*60))*1000;
+  countDownDate = new Date().getTime() + (1 + (timerConfig * 60)) * 1000;
   document.getElementById("timerStart").innerHTML = "Restart";
   var x = setInterval(function() {
       var now = new Date().getTime();
@@ -12,14 +12,13 @@ function timerStart() {
       document.getElementById("pokerTimer").innerHTML = minutes + "m " + seconds + "s ";
       if (distance < 0) {
           clearInterval(x);
-          document.getElementById("pokerTimer").innerHTML = "Stopped.";
+          document.getElementById("pokerTimer").innerHTML = "Timer stopped.";
       }
   }, 1000);
 }
 
 function timerStop() {
   document.getElementById("timerStart").innerHTML = "Start";
-  document.getElementById("pokerTimer").innerHTML = "Stopped.";
   countDownDate = new Date().getTime();
 }
 
