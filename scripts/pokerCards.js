@@ -1,4 +1,19 @@
+/* 
+var app = angular.module('pokerApp', []);
 
+
+
+function pokerController($scope) {
+	$scope.count = 0;
+}
+
+app.directive("CreatePokerCards",function(){
+	return {
+		restrict: "E"
+		template:
+		
+	}
+}); */
 
 //Poker Cards
 var pokerCards = ['?','0', '1/2', '1', '2', '3','5','8','13','21','40','80','100','coffee break'];
@@ -15,3 +30,5 @@ function CreatePokerCards()
                     }
 	
 }
+
+
