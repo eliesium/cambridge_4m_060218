@@ -2,10 +2,10 @@
 <head>
 <link rel="stylesheet" href="styles/poker.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="scripts/pokerCards.js" ></script>
 <script src="scripts/pokerTimer.js"></script>
+<script src="scripts/pokerCards.js"></script>
 </head>
-	<body ng-app="">
+	<body>
 		<div id="pokerHeader">
 			<div id="sessionDetails">
 				<ln>Poker Planning Session</ln>
@@ -22,24 +22,13 @@
 				</div>
 			</div>
 		</div>
-		<div id="pokerBody">
-			<div id="selectedCard" >
-				This is the selectedCard
-				<p>Name: <input type="text" ng-model="pokerCard"></p>
-				<p>Your Card is: {{ pokerCard }}</p>
+		<div id="pokerBody" ng-app="PokerCardApp" ng-controller="PokerCardCtrl">
+			<div id="selectedCard">
+				<p>Name: <input type="text" ng-model="participantName"></p>
+				<p>{{participantName}}, you picked the following card: {{selectedCard}}</p>
 			</div>
-			
-			<div id="pokerCards" >
-				This is the pokerCards
-				<table>
-					<tr>
-						<td>
-							<script>
-								CreatePokerCards();
-							</script>
-						</td>
-					</tr>
-				</table>
+			<div id="pokerCards">
+					<button ng-repeat="card in pokerCards" type="button" class="pokerCardButtons" ng-click="updateSelected(card);">{{card}}</button>
 			</div>
 		</div>
 	</body>
