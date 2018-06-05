@@ -19,6 +19,7 @@ function timerStart() {
 
 function timerStop() {
   document.getElementById("timerStart").innerHTML = "Start";
+  document.getElementById("pokerTimer").innerHTML = "Timer stopped.";
   countDownDate = new Date().getTime();
 }
 
